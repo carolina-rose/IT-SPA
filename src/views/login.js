@@ -12,48 +12,48 @@ export const login = () => {
 
   const log = $(`
     <form id="log">
-    <em><h3>Zaloguj się</h3><em>
-        <div>
+      <h3>Zaloguj się</h3>
+      <div>
         <label for="e-mail"><b>E-mail:</b></label>
-        </div>
-        <div>
+      </div>
+      <div>
         <input type="email" required name="e-mail" id="logEmail">
-        </div>
-        <div>
+      </div>
+      <div>
         <label for="password"><b>Hasło:</b></label>
-        </div>
-        <div>
+      </div>
+      <div>
         <input type="password" name="password" id="logPassword" requried>
-        </div>
-        <div>
+      </div>
+      <div>
         <button type="submit" class="login">Zaloguj</button>
-        </div>
+      </div>
     </form>
 `);
 
   const register = $(`
-        <form id="register">
-        <em><h3>Nie masz konta? Zarejestruj się!</h3></em>
-        <div>
+    <form id="register">
+      <h3>Nie masz konta? Zarejestruj się!</h3>
+      <div>
         <label for="e-mail"><b>E-mail:</b></label>
-        </div>
-        <div>
+      </div>
+      <div>
         <input type="email" required name="e-mail" id="regEmail">
-        </div>
-        <div>
+      </div>
+      <div>
         <label for="password"><b>Hasło:</b></label>
-        </div>
-        <div>
+      </div>
+      <div>
         <input minlength="8" type="password" name="password" id="regPassword" requried>
-        </div>
-        <div>
+      </div>
+      <div>
         <label for="password"><b>Powtórz Hasło:</b></label>
         <input minlength="8" type="password" name="password" id="regPassword1" requried>
-        </div>
-        <div>
+      </div>
+      <div>
         <button type="submit" class="login">Utwórz konto</button>
-        </div>
-        </form>
+      </div>
+    </form>
     `);
 
   const img = $(`<img src=${require("../../static/login.jpg")} />`);
@@ -92,7 +92,9 @@ export const login = () => {
 
   register.submit(e => {
     e.preventDefault();
-    const html = $(`<div class="alert alert-fail">Ten adres e-mail jest już zajęty<div/>`);
+    const html = $(
+      `<div class="alert alert-fail">Ten adres e-mail jest już zajęty<div/>`
+    );
     fetch("http://localhost:3000/users", {
       method: "GET"
     })
@@ -104,7 +106,6 @@ export const login = () => {
           setTimeout(() => {
             $(".alert").remove();
           }, 2000);
-
         } else if ($("#regPassword").val() === $("#regPassword1").val()) {
           const formData = {
             email: $("#regEmail").val(),
@@ -129,7 +130,9 @@ export const login = () => {
 
           location.reload();
         } else if ($("#regPassword").val() !== $("#regPassword1").val()) {
-          const html = $(`<div class="alert alert-fail">Hasła różnią się<div/>`);
+          const html = $(
+            `<div class="alert alert-fail">Hasła różnią się<div/>`
+          );
           fragment.before(html);
 
           setTimeout(() => {

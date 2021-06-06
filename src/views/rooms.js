@@ -26,25 +26,31 @@ export const rooms = () => {
 
         let img;
 
-        if (id === 1) {
-          img = `${require("../../static/unarny.jpg")}`;
-        } else if (id === 2) {
-          img = `${require("../../static/binarny.jpg")}`;
-        } else if (id === 3) {
-          img = `${require("../../static/trojkowy.jpg")}`;
-        } else {
-          img = `${require("../../static/czworkowy.jpg")}`;
+        switch (id) {
+          case 1:
+            img = `${require("../../static/unarny.jpg")}`;
+            break;
+
+          case 2:
+            img = `${require("../../static/binarny.jpg")}`;
+            break;
+
+          case 3:
+            img = `${require("../../static/trojkowy.jpg")}`;
+            break;
+
+          default:
+            img = `${require("../../static/czworkowy.jpg")}`;
         }
 
         const article = $(`
-                        <article>
-                        <h2>${name}</h2>
-                        <img src="${img}"/>
-                        <p>${guests}-osobowy (ilość łóżek: ${beds})</p>
-                        <p>cena: ${price} PLN</p>
-                        </article>
-
-                    `);
+          <article>
+            <h2>${name}</h2>
+            <img src="${img}"/>
+            <p>${guests}-osobowy (ilość łóżek: ${beds})</p>
+            <p>cena: ${price} PLN</p>
+          </article>
+        `);
         article.append(button);
 
         return article;

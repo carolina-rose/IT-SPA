@@ -50,14 +50,14 @@ export const roomsDetails = roomId => {
         $(`<p><strong>${price} PLN</strong></p>`),
         $("<i>Zarezerwuj pokój</i>"),
         $(`<form id="room">
-        <label for="arrival-date">Data przyjazdu:</label>
-        <input type="date" required name="arrival-date" id="arrival-date" min="${date}"></input>
-        <label for="leaving-date">Data wyjazdu:</label>
-        <input type="date" required name="leaving-date" id="leaving-date"></input>
-        <label for="guests">Liczba gości:</label>
-        <input type="number" required name="guests" id="guests" min="1"></input>
-        <button type="submit" class="reserve">Zarezerwuj</button>
-        </form>`)
+            <label for="arrival-date">Data przyjazdu:</label>
+            <input type="date" required name="arrival-date" id="arrival-date" min="${date}"></input>
+            <label for="leaving-date">Data wyjazdu:</label>
+            <input type="date" required name="leaving-date" id="leaving-date"></input>
+            <label for="guests">Liczba gości:</label>
+            <input type="number" required name="guests" id="guests" min="1"></input>
+            <button type="submit" class="reserve">Zarezerwuj</button>
+          </form>`)
       );
 
       $("#arrival-date").change(() => {
