@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "guest@gmail.com",
+      "password": "87654321"
+    },
+    {
+      "email": "karolina@wp.pl",
+      "password": "bardzotrudnehasło",
+      "id": 2
+    },
+    {
+      "email": "testowymail@mail.co.pl",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "email": "testowymail@mail.co.ru",
+      "password": "12345678",
+      "id": 4
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Pokój unarny",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "beds": 1,
+      "guests": 1,
+      "price": 170
+    },
+    {
+      "id": 2,
+      "name": "Pokój binarny",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "beds": 1,
+      "guests": 2,
+      "price": 240
+    },
+    {
+      "id": 3,
+      "name": "Pokój trójkowy",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "beds": 2,
+      "guests": 3,
+      "price": 290
+    },
+    {
+      "id": 4,
+      "name": "Pokój czwórkowy",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "beds": 2,
+      "guests": 4,
+      "price": 340
+    }
+  ],
+  "treatments": [
+    {
+      "id": 1,
+      "name": "Masaż rozgrzanym monitorem",
+      "area": "plecy",
+      "time": 30,
+      "price": 80,
+      "amount": 1
+    },
+    {
+      "id": 2,
+      "name": "Biczowanie kablem od myszy",
+      "area": "plecy",
+      "time": 20,
+      "price": 70,
+      "amount": 1
+    },
+    {
+      "id": 3,
+      "name": "Peeling odłamkami płyty CD",
+      "area": "twarz",
+      "time": 15,
+      "price": 50,
+      "amount": 1
+    },
+    {
+      "id": 4,
+      "name": "Pedicure woskiem z USB",
+      "area": "stopy",
+      "time": 25,
+      "price": 100,
+      "amount": 1
+    },
+    {
+      "id": 5,
+      "name": "Manicure analogowo-cyfrowy",
+      "area": "dłonie",
+      "time": 45,
+      "price": 150,
+      "amount": 1
+    },
+    {
+      "id": 6,
+      "name": "Kąpiel w gorącej kawie",
+      "area": "całe ciało",
+      "time": 60,
+      "price": 200,
+      "amount": 1
+    },
+    {
+      "id": 7,
+      "name": "Depilacja dyskiem twardym",
+      "area": "całe ciało",
+      "time": 45,
+      "price": 120,
+      "amount": 1
+    }
+  ]
+}

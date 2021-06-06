@@ -1,0 +1,422 @@
+/* general styles */
+
+body {
+  font-family: cursive;
+  margin: 0px;
+}
+
+.alert-success{
+  background-color: lightgreen;
+  text-align: center;
+  color: darkgreen;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.alert-fail {
+  background-color: lightcoral;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.alert-info{
+  text-align: center;
+  background-color: lightskyblue;
+  width: 100%;
+}
+
+/* header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 182, 193, 0.301);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 1);
+}
+header span {
+  font-size: 50px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 1);
+  padding: 20px;
+  cursor: pointer;
+}
+
+header span i {
+  color: rgb(255, 182, 193);
+  cursor: pointer;
+}
+
+nav button {
+  float: left;
+  font-size: 30px;
+  padding: 20px;
+  color: black;
+  border: none;
+  background-color: inherit;
+}
+
+nav button:hover {
+  color: lightpink;
+  cursor: pointer;
+}
+
+/* Home View */
+
+.mainContainer {
+  content: "";
+  width: 100%;
+  height: 100vh;
+  opacity: 70%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: repeat;
+  backface-visibility: hidden;
+  animation: slide 30s linear infinite 0s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  background-image: url("./static/1.jpg");
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 1);
+}
+
+@keyframes slide {
+  0% {
+    background-image: url("./static/1.jpg");
+  }
+
+  25% {
+    background-image: url("./static/2.jpg");
+  }
+
+  50% {
+    background-image: url("./static/3.jpg");
+  }
+
+  75% {
+    background-image: url("./static/4.jpg");
+  }
+
+  100% {
+    background-image: url("./static/5.jpg");
+  }
+}
+
+/* About View  */
+
+#about {
+  z-index: -1;
+  background-image: url("./static/about.jpg");
+  width: 100%;
+  height: 100vh;
+  opacity: 80%;
+  background-position: center center;
+  background-size: cover;
+}
+
+#about h1 {
+  padding: 10px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#about p {
+  padding: 0px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: justify;
+  right: 5%;
+  position: relative;
+}
+
+/* Rooms View  */
+
+#roomView {
+  width: 100%;
+  flex-grow: 1;
+}
+
+#roomView section {
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#roomView article {
+  padding: 40px;
+  padding-top: 20px;
+  margin: 20px;
+}
+
+#roomView h1 {
+  margin-top: 0px;
+  padding: 25px;
+  text-align: center;
+}
+
+#roomView article h2 {
+  text-align: center;
+}
+
+#roomView button {
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 80px;
+}
+
+#roomView img {
+  width: 250px;
+  height: 200px;
+}
+
+/* Treatments View  */
+
+#treatmentsView {
+  background-image: url("./static/zabiegi.jpg");
+  opacity: 80%;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#treatmentsView section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: auto;
+  align-content: start;
+}
+
+#treatmentsView article {
+  padding: 40px;
+  background-color: white;
+  margin: 20px;
+  flex-basis: 14%;
+  box-shadow: 5px 10px #242323;
+  border-radius: 20px;
+}
+
+#treatmentsView h1 {
+  padding: 10px;
+  text-align: center;
+  opacity: 100%;
+  margin-top: 0px;
+}
+
+#treatmentsView button {
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 80px;
+}
+
+/* Login View  */
+
+#loginView {
+  display: flex;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: auto;
+  align-content: start;
+  margin: 0px;
+  height: 100vh;
+}
+
+#log,
+#register {
+  padding: 40px;
+}
+
+#loginView img {
+  width: 530px;
+}
+
+#loginView button {
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 80px;
+  margin-top: 5px;
+}
+
+#loginView input {
+  padding: 3px;
+  width: 20%;
+  border-radius: 10em;
+  margin: 7px;
+}
+
+#log input {
+  width: 110%;
+}
+
+#register input {
+  width: 80%;
+}
+
+/* Shopping Cart View  */
+
+#shoppingCartView {
+  height: 100vh;
+}
+
+#shoppingCartView .shopping {
+  padding: 5px;
+  width: 30%;
+  border-style: solid;
+  border-width: 1px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 182, 193, 0.301);
+}
+
+#shoppingCartView h1 {
+  margin-top: 0px;
+  padding: 10px;
+  text-align: center;
+}
+.remove {
+  background-color: rgb(109, 105, 105);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  border-style: none;
+  position: relative;
+  top: 5%;
+  left: 95%;
+  padding: 5px;
+}
+
+.plus {
+  display: inline;
+  background-color: rgb(109, 105, 105);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  border-style: none;
+  position: relative;
+  padding: 5px;
+}
+
+.minus {
+  display: inline;
+  background-color: rgb(109, 105, 105);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  border-style: none;
+  position: relative;
+  padding: 7px;
+}
+
+/* Rooms Details View  */
+
+#roomsDetailsView {
+  padding: 15px;
+  height: 100vh;
+}
+
+#roomsDetailsView img {
+  width: 300px;
+  height: 250px;
+  padding-left: 20px;
+}
+
+#roomsDetailsView button {
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 80px;
+}
+
+#roomsDetailsView h2 {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+/* Treatments Details View  */
+
+#treatmentsDetailsView {
+  background-image: url("./static/zabiegi.jpg");
+  z-index: -1;
+  opacity: 80%;
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  text-align: justify;
+  height: 100vh;
+}
+
+#treatmentsDetailsView button {
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 80px;
+  margin-left: 20px;
+}
+
+#treatmentsDetailsView h2 {
+  padding-left: 20px;
+  margin-top: 0px;
+}
+
+#treatmentsDetailsView p {
+  padding-left: 20px;
+}
+/* Shopping Cart Summary  */
+
+#shoppingCartSummary {
+  z-index: 1;
+  max-width: 400px;
+  float: right;
+  font-size: 15px;
+  border: solid;
+  overflow: scroll;
+  background-color: rgb(248, 240, 240);
+  position: fixed;
+  right: 0;
+  top: 120px;
+  opacity: 100%;
+  text-decoration: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Responsive  web */
+
+@media all and (max-width: 1366px) {
+  #roomView section {
+    justify-content: space-between;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  #logotitle {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  #roomView section {
+    justify-content: space-evenly;
+  }
+  #loginView img {
+    width: 400px
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #loginView img {
+    width: 100px;
+  }
+}
