@@ -34,14 +34,14 @@ export const shoppingCart = () => {
     roomsList.map((object) => {
       let room = $(`
         <div class="shopping">
-        <p class="shoppingCart">Pokój: ${object.roomName}</p>
-        <p class="shoppingCart">Data przyjazdu: ${object.arrivalDate}</p>
-        <p class="shoppingCart">Data wyjazdu: ${object.leavingDate}</p>
-        <p class="shoppingCart">Liczba gości: ${object.guests}</p>
-        <p>Cena: ${object.price} PLN</p>
-        <button class="remove" data-name="${object.roomName}">X</button>
+          <p class="shoppingCart">Pokój: ${object.roomName}</p>
+          <p class="shoppingCart">Data przyjazdu: ${object.arrivalDate}</p>
+          <p class="shoppingCart">Data wyjazdu: ${object.leavingDate}</p>
+          <p class="shoppingCart">Liczba gości: ${object.guests}</p>
+          <p>Cena: ${object.price} PLN</p>
+          <button class="remove" data-name="${object.roomName}">X</button>
         </div>
-          `);
+      `);
 
       fragment.append(room);
 
@@ -64,16 +64,16 @@ export const shoppingCart = () => {
     treatmentsList.map(object => {
       let treatment = $(`
           <div class="shopping">
-          <p class="shoppingCart">Zabieg: ${object.treatmentName}</p>
+            <p class="shoppingCart">Zabieg: ${object.treatmentName}</p>
           <div>
-          <button class="plus">+</button>
-          <p class="amount-${object.id}">Ilość: ${object.amount}</p>
-          <button class="minus">-</button>
+            <button class="plus">+</button>
+            <p class="amount-${object.id}">Ilość: ${object.amount}</p>
+            <button class="minus">-</button>
           </div>
-          <p>Cena: ${object.price} PLN</p>
-          <button class="remove">X</button>
+            <p>Cena: ${object.price} PLN</p>
+            <button class="remove">X</button>
           </div>
-            `);
+      `);
 
       fragment.append(treatment);
 
@@ -129,14 +129,14 @@ export const shoppingCart = () => {
       roomsList.map(object => {
         let room = $(`
           <div class="shopping">
-          <p class="shoppingCart">Pokój: ${object.roomName}</p>
-          <p class="shoppingCart">Data przyjazdu: ${object.arrivalDate}</p>
-          <p class="shoppingCart">Data wyjazdu: ${object.leavingDate}</p>
-          <p class="shoppingCart">Liczba gości: ${object.guests}</p>
-          <p>Cena: ${object.price} PLN</p>
-          <button class="remove">X</button>
+            <p class="shoppingCart">Pokój: ${object.roomName}</p>
+            <p class="shoppingCart">Data przyjazdu: ${object.arrivalDate}</p>
+            <p class="shoppingCart">Data wyjazdu: ${object.leavingDate}</p>
+            <p class="shoppingCart">Liczba gości: ${object.guests}</p>
+            <p>Cena: ${object.price} PLN</p>
+            <button class="remove">X</button>
           </div>
-            `);
+        `);
 
         fragment.append(room);
 
@@ -160,17 +160,17 @@ export const shoppingCart = () => {
     } else {
       treatmentsList.map(object => {
         let treatment = $(`
-        <div class="shopping">
-          <p class="shoppingCart">Zabieg: ${object.treatmentName}</p>
+          <div class="shopping">
+            <p class="shoppingCart">Zabieg: ${object.treatmentName}</p>
           <div>
-          <button class="plus">+</button>
-          <p class="amount-${object.id}">Ilość: ${object.amount}</p>
-          <button class="minus">-</button>
+            <button class="plus">+</button>
+            <p class="amount-${object.id}">Ilość: ${object.amount}</p>
+            <button class="minus">-</button>
           </div>
-          <p>Cena: ${object.price} PLN</p>
-          <button class="remove">X</button>
+            <p>Cena: ${object.price} PLN</p>
+            <button class="remove">X</button>
           </div>
-          `);
+        `);
 
         fragment.append(treatment);
 
