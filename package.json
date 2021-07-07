@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:app": "parcel ./index.html --open",
+    "start": "parcel ./index.html --open",
     "start:db": "json-server --watch database.json"
   },
   "keywords": [],
@@ -15,7 +15,8 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@popperjs/core": "^2.9.2",
     "ba": "0.0.5",
-    "function": "^0.6.1"
+    "function": "^0.6.1",
+    "heroku": "^7.56.0"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.5",
