@@ -16,7 +16,11 @@
     "@popperjs/core": "^2.9.2",
     "ba": "0.0.5",
     "function": "^0.6.1",
-    "heroku": "^7.56.0"
+    "heroku": "^7.56.0",
+    "@types/jquery": "^3.5.5",
+    "jquery": "^3.6.0",
+    "json-server": "^0.16.3",
+    "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.5",
