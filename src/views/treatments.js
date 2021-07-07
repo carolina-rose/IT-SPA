@@ -27,12 +27,11 @@ export const treatments = () => {
         });
 
         const article = $(`
-                        <article>
-                        <p>${name}<p>
-                        <p>${price} PLN</p>
-                        </article>
-
-                    `);
+                          <article>
+                            <p>${name}<p>
+                            <p>${price} PLN</p>
+                          </article>
+                          `);
 
         article.append(button);
 

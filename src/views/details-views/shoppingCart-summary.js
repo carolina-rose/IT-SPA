@@ -25,7 +25,7 @@ export const shoppingCartSummary = () => {
     JSON.parse(roomsList).map(object => {
       let shopping = $(`
           <div class="shopping">
-          <p class="shoppingCart"> - ${object.roomName} (${object.price} PLN)</p>
+            <p class="shoppingCart"> - ${object.roomName} (${object.price} PLN)</p>
           </div>
             `);
 
@@ -35,7 +35,7 @@ export const shoppingCartSummary = () => {
     JSON.parse(treatmentsList).map(object => {
       let shopping1 = $(`
             <div class="shopping>
-            <p class="shoppingCart"> - x${object.amount} ${object.treatmentName} (${object.price} PLN)</p>
+              <p class="shoppingCart"> - x${object.amount} ${object.treatmentName} (${object.price} PLN)</p>
             </div> 
               `);
 
@@ -46,7 +46,7 @@ export const shoppingCartSummary = () => {
       JSON.parse(roomsList).map(object => {
         let shopping = $(`
             <div class="shopping">
-            <p class="shoppingCart"> - ${object.roomName} (${object.price} PLN)</p>
+              <p class="shoppingCart"> - ${object.roomName} (${object.price} PLN)</p>
             </div>
               `);
 
@@ -56,7 +56,7 @@ export const shoppingCartSummary = () => {
       JSON.parse(treatmentsList).map(object => {
         let shopping1 = $(`
               <div class"shopping">
-              <p class="shoppingCart"> - x${object.amount} ${object.treatmentName} (${object.price} PLN)</p>
+                <p class="shoppingCart"> - x${object.amount} ${object.treatmentName} (${object.price} PLN)</p>
               </div>
                 `);
 

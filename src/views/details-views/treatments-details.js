@@ -35,8 +35,8 @@ export const treatmentsDetails = treatmentId => {
         $(`<p><strong>Zabieg na:</strong> ${area} | <strong>Czas zabiegu:</strong> ${time} min</p>`),
         $(`<p><strong>${price} PLN</strong></p>`),
         $(`<form id="treatment">
-                        <button type="submit">Dodaj do koszyka</button>
-                        </form>`)
+              <button type="submit">Dodaj do koszyka</button>
+            </form>`)
       );
 
       $("#treatment").submit(e => {
