@@ -5,7 +5,7 @@ export const rooms = () => {
   const title = $(`<h1>Nasze pokoje</h1>`);
   const section = $(`<section>Ładowanie...</section>`);
 
-  fetch("http://localhost:3000/rooms")
+  fetch("https://jakis-backend-hehexd.herokuapp.com/rooms")
     .then(resp => resp.json())
     .then(arr => {
       const articles = arr.map(room => {

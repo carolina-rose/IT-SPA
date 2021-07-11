@@ -25,7 +25,7 @@ export const roomsDetails = roomId => {
     document.cookie = `reservationList=${cookieObject}; ${expires}`;
   };
 
-  fetch(`http://localhost:3000/rooms/${roomId}`)
+  fetch(`https://jakis-backend-hehexd.herokuapp.com/rooms/${roomId}`)
     .then(response => response.json())
     .then(room => {
       const { id, name, beds, guests, price, description } = room;

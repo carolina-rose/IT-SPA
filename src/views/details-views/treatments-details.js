@@ -25,7 +25,7 @@ export const treatmentsDetails = treatmentId => {
     document.cookie = `treatmentsList=${cookieObject}; ${expires}`;
   };
 
-  fetch(`http://localhost:3000/treatments/${treatmentId}`)
+  fetch(`https://jakis-backend-hehexd.herokuapp.com/treatments/${treatmentId}`)
     .then(resp => resp.json())
     .then(treatment => {
       const { id, name, area, time, price, amount } = treatment;

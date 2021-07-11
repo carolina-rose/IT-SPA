@@ -5,7 +5,7 @@ export const treatments = () => {
   const title = $(`<h1>Nasze zabiegi</h1>`);
   const section = $(`<section>Ładowanie...</section>`);
 
-  fetch("http://localhost:3000/treatments", {
+  fetch("https://jakis-backend-hehexd.herokuapp.com/treatments", {
     method: "GET"
   })
     .then(resp => resp.json())

@@ -60,7 +60,7 @@ export const login = () => {
 
   log.submit(e => {
     e.preventDefault();
-    fetch("http://localhost:3000/users", {
+    fetch("https://jakis-backend-hehexd.herokuapp.com/users", {
       method: "GET"
     })
       .then(resp => resp.json())
@@ -95,7 +95,7 @@ export const login = () => {
     const html = $(
       `<div class="alert alert-fail">Ten adres e-mail jest już zajęty<div/>`
     );
-    fetch("http://localhost:3000/users", {
+    fetch("https://jakis-backend-hehexd.herokuapp.com/users", {
       method: "GET"
     })
       .then(resp => resp.json())
@@ -112,7 +112,7 @@ export const login = () => {
             password: $("#regPassword").val()
           };
           const html = $(`<div class="alert alert-success">Dodano konto<div/>`);
-          fetch("http://localhost:3000/users", {
+          fetch("https://jakis-backend-hehexd.herokuapp.com/users", {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
