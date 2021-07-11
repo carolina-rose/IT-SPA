@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel ./index.html --open",
-    "start": "json-server --watch database.json"
+    "start": "json-server --watch database.json",
+    "build": "parcel ./index.html --open"
   },
   "keywords": [],
   "author": "",
